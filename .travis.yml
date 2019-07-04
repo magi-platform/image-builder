@@ -7,7 +7,7 @@ services:
 
 before_install:
   - docker logout
-  - docker login -u $DOCKER_USERNAME -password-stdin $DOCKER_PASSWORD
+  - docker login -u $DOCKER_USERNAME --password-stdin $DOCKER_PASSWORD
 
 stages:
   - build
